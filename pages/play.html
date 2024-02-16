@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻想乡 - 播放</title>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg mb sticky-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand flex flex-items-center" href="/">
+          <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top b-rd" />
+          <span class="ml-5">幻想乡</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link important-flex" aria-current="page" href="/">
+                <div class="i-ant-design-home-twotone text-xl mt-0.6"></div>
+                &nbsp;首页
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-fire-twotone text-xl mt-0.6"></div>
+                &nbsp;TV动画
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-video-camera-twotone text-xl mt-0.6"></div>
+                &nbsp;剧场版
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/rank.html">
+                <div class="i-ant-design-crown-twotone text-xl mt-0.6"></div>
+                &nbsp;排行榜
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/board.html">
+                <div class="i-ant-design-message-twotone text-xl mt-0.6"></div>
+                &nbsp;留言板
+              </a>
+            </li>
+          </ul>
+
+          <!-- 右侧操作区 -->
+          <div class="input-group important-w-40 mr-10 mb mt">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="i-ant-design-search-outlined text-xl"></div>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索..." aria-label="search" aria-describedby="basic-addon1" />
+          </div>
+          <div class="nav-op mb mt">
+            <button type="button" id="loginBtn" class="btn btn-outline-info rounded-pill">登录</button>
+            <button type="button" class="btn btn-primary rounded-pill">下载APP</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏 END -->
+
+    <!-- 播放器主体 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-9 col-lg-12">
+          <div class="artplayer-app"></div>
+        </div>
+        <div class="col-3 d-none d-xl-block d-lg-none">
+          <div class="card c-op">
+            <div class="card-body">
+              <h5 class="card-title">间谍过家家</h5>
+              <h6 class="card-subtitle mb-2 text-muted">预览版</h6>
+              <span class="badge text-bg-danger mb important-text-4">热门</span>
+              <span class="badge text-bg-secondary mb important-text-4">搞笑</span>
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      番剧简介
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">每个人都有不可告人的一面。这是一个世界各国均暗地里进行激烈情报战的时代。</div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid gap-2 mt">
+                <button class="btn btn-outline-info" type="button">第 1 集</button>
+                <button class="btn btn-outline-info" type="button">第 2 集</button>
+                <button class="btn btn-outline-info" type="button">第 3 集</button>
+                <button class="btn btn-outline-info" type="button">第 4 集</button>
+                <button class="btn btn-outline-info" type="button">第 5 集</button>
+                <button class="btn btn-outline-info" type="button">第 6 集</button>
+                <button class="btn btn-outline-info" type="button">第 7 集</button>
+                <button class="btn btn-outline-info" type="button">第 8 集</button>
+                <button class="btn btn-outline-info" type="button">第 9 集</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 播放器主体 END -->
+
+    <!-- Footer -->
+    <footer style="margin-top: 0">
+      <p>©2023 By baby李</p>
+      <p>苏 ICP 备 2022010832 号 - 1</p>
+    </footer>
+    <!-- Footer END -->
+    <script type="module" src="/src/entries/play.ts"></script>
+  </body>
+</html>

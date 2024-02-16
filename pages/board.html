@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻想乡 - 留言板</title>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg mb sticky-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand flex flex-items-center" href="/">
+          <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top b-rd" />
+          <span class="ml-5">幻想乡</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link important-flex" aria-current="page" href="/">
+                <div class="i-ant-design-home-twotone text-xl mt-0.6"></div>
+                &nbsp;首页
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-fire-twotone text-xl mt-0.6"></div>
+                &nbsp;TV动画
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-video-camera-twotone text-xl mt-0.6"></div>
+                &nbsp;剧场版
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/rank.html">
+                <div class="i-ant-design-crown-twotone text-xl mt-0.6"></div>
+                &nbsp;排行榜
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active important-flex" href="#">
+                <div class="i-ant-design-message-twotone text-xl mt-0.6"></div>
+                &nbsp;留言板
+              </a>
+            </li>
+          </ul>
+
+          <!-- 右侧操作区 -->
+          <div class="input-group important-w-40 mr-10 mb mt">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="i-ant-design-search-outlined text-xl"></div>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索..." aria-label="search" aria-describedby="basic-addon1" />
+          </div>
+          <div class="nav-op mb mt">
+            <button type="button" id="loginBtn" class="btn btn-outline-primary rounded-pill">登录</button>
+            <button type="button" class="btn btn-primary rounded-pill">下载APP</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏 END -->
+
+    <div class="container-fluid top-container">
+      <div class="container text">
+        <h2>期待您的声音</h2>
+        <h3>offer your great opinion</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">欢迎留言</h5>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">邮箱地址</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">留言内容</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-header">留言板</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque id explicabo iste ipsam labore doloribus tenetur quisquam. Laborum ut exercitationem quisquam quaerat
+              obcaecati est sint hic quis aperiam, labore impedit.
+            </li>
+            <li class="list-group-item">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis deleniti voluptates ipsum saepe maxime ratione quisquam quis veniam neque. Porro nam
+              praesentium, rerum rem autem aliquam eum nisi impedit?
+            </li>
+            <li class="list-group-item">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nobis deleniti voluptates ipsum saepe maxime ratione quisquam quis veniam neque. Porro nam
+              praesentium, rerum rem autem aliquam eum nisi impedit?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>©2023 By baby李</p>
+      <p>苏 ICP 备 2022010832 号 - 1</p>
+    </footer>
+    <!-- Footer END -->
+    <script type="module" src="/src/entries/board.ts"></script>
+  </body>
+</html>

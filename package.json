@@ -1,0 +1,29 @@
+{
+  "name": "final-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "artplayer": "^5.0.9",
+    "artplayer-plugin-danmuku": "^5.0.1",
+    "axios": "^1.6.2",
+    "bootstrap": "5.3.2",
+    "sweetalert2": "^11.10.1",
+    "swiper": "^11.0.4"
+  },
+  "devDependencies": {
+    "@iconify-json/ant-design": "^1.1.10",
+    "@types/bootstrap": "^5.2.9",
+    "@types/node": "^20.9.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "unocss": "^0.57.4",
+    "vite": "^4.5.0"
+  }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻想乡 - 番剧详情</title>
+    <link rel="stylesheet" href="/layui/css/layui.css" />
+    <script src="/layui/layui.js"></script>
+    <script>
+      const jumpToDetail = (info) => {
+        localStorage.setItem('detailInfo', JSON.stringify(info))
+        location.href = '/pages/detail.html'
+      }
+    </script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg mb sticky-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand flex flex-items-center" href="/">
+          <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top b-rd" />
+          <span class="ml-5">幻想乡</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link important-flex" aria-current="page" href="/">
+                <div class="i-ant-design-home-twotone text-xl mt-0.6"></div>
+                &nbsp;首页
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-fire-twotone text-xl mt-0.6"></div>
+                &nbsp;TV动画
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-video-camera-twotone text-xl mt-0.6"></div>
+                &nbsp;剧场版
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/rank.html">
+                <div class="i-ant-design-crown-twotone text-xl mt-0.6"></div>
+                &nbsp;排行榜
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/board.html">
+                <div class="i-ant-design-message-twotone text-xl mt-0.6"></div>
+                &nbsp;留言板
+              </a>
+            </li>
+          </ul>
+
+          <!-- 右侧操作区 -->
+          <div class="input-group important-w-40 mr-10 mb mt">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="i-ant-design-search-outlined text-xl"></div>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索..." aria-label="search" aria-describedby="basic-addon1" />
+          </div>
+          <div class="nav-op mb mt">
+            <button type="button" id="loginBtn" class="btn btn-outline-primary rounded-pill">登录</button>
+            <button type="button" class="btn btn-primary rounded-pill">下载APP</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏 END -->
+
+    <!-- 番剧详情 -->
+    <div class="container-fluid">
+      <section>
+        <div class="row">
+          <div class="col-xl-8">
+            <!-- md 以下 -->
+            <img src="" class="detail-img d-block d-md-none sm-img" />
+            <div class="left-intro-box flex">
+              <!-- md 以上 -->
+              <img src="" class="detail-img mr-10 d-none d-md-block" />
+              <div>
+                <h3 id="detail-title"></h3>
+                <div class="intro-badge-block mt-3 d-sm-none d-none d-md-block">
+                  <span class="intro-badge">更新至 16 集</span>
+                  <span class="intro-badge ml-4">2023</span>
+                  <span class="intro-badge ml-4">日本</span>
+                </div>
+                <div class="intro-sm-block c-gray mt-3 d-sm-block d-block d-md-none">2022·日本·动作 动画 奇幻 ·2023-01-09(日本)上映·日语·详情</div>
+                <div class="intro-info-block mt-3">
+                  <p><span>导演：</span>秋田谷典昭 马引圭</p>
+                  <p><span>演员：</span>千叶翔也 富田美忧 市之濑加那 玄田哲章</p>
+                  <p><span>类型：</span>动作 动画 奇幻</p>
+                </div>
+                <!-- md 以上的按钮组 -->
+                <div class="btns-lg d-none d-md-block">
+                  <button type="button" id="playBtn" class="btn btn-primary mr">
+                    <div class="i-ant-design-caret-right-outlined mr-2"></div>
+                    播放
+                  </button>
+                  <button type="button" id="shareBtn" class="btn btn-outline-success rounded-pill mr">
+                    <div class="i-ant-design-share-alt-outlined mr-2"></div>
+                    分享
+                  </button>
+                  <button type="button" id="likeBtn" class="btn btn-outline-warning rounded-pill important-hover:c-white">
+                    <div class="i-ant-design-star-outlined mr-2"></div>
+                    收藏
+                  </button>
+                </div>
+                <!-- md 以下的按钮组 -->
+                <!-- <div class="btns-sm d-block d-md-none sm-img">
+                  <button type="button" class="btn btn-primary mr">播放</button>
+                  <button type="button" class="btn btn-outline-success rounded-pill mr">分享</button>
+                  <button type="button" class="btn btn-outline-warning rounded-pill important-hover:c-white">收藏</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1">
+            <!-- xl 以上的评分 -->
+            <div class="right-rate-box-xl d-none d-xl-block">
+              <div class="top-rate">
+                <span class="score">10.0</span>
+                <div class="right flex">
+                  <span class="time">3次评分</span>
+                  <div class="flex ml">
+                    <div class="icon i-ant-design-zhihu-square-filled inline-block"></div>
+                    <span class="douban">7.1</span>
+                  </div>
+                </div>
+              </div>
+              <div id="rate" class="flex flex-items-center justify-center h-4"></div>
+              <hr />
+              <div class="bot">
+                <img src="/img/qrcode.png" alt="qrcode" />
+                <span>扫一扫手机播放</span>
+              </div>
+            </div>
+            <!-- xl 以下的评分 -->
+            <div class="right-rate-box d-block d-xl-none">
+              <div class="top-rate">
+                <span class="score">10.0</span>
+                <div class="right flex">
+                  <span class="time">3次评分</span>
+                  <div class="flex">
+                    <div class="icon i-ant-design-zhihu-square-filled inline-block"></div>
+                    <span class="douban">7.1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 番剧简介 -->
+      <section class="d-info">
+        <h3>简介</h3>
+        <p class="p-info">
+          最强、无与伦比的粪作玩家来了！但为什么要头戴鸟面赤裸上身？对兴趣认真有错吗？玩什么都能够”乐在其中”才是最强的！阳务乐郎是一个超爱玩”粪作”的粪作玩家，玩家名称名为桑乐，拥有超一流的电玩技术！某天一个小小的契机让他开始挑战大众公认的神作电玩。没但想到电玩世界和现实生活却都因此开始以他为中心产生变化……
+        </p>
+      </section>
+      <!-- 番剧剪辑 END -->
+
+      <!-- 资源列表 -->
+      <section class="s-ziyuan mt-5">
+        <h3>资源列表</h3>
+        <div class="list">
+          <div class="d-grid g-8 d-md-block">
+            <button type="button" class="list-btn btn btn-outline-info">第一集</button>
+            <button type="button" class="list-btn btn btn-outline-info">第二集</button>
+            <button type="button" class="list-btn btn btn-outline-info">第三集</button>
+            <button type="button" class="list-btn btn btn-outline-info">第四集</button>
+            <button type="button" class="list-btn btn btn-outline-info">第五集</button>
+            <button type="button" class="list-btn btn btn-outline-info">第六集</button>
+          </div>
+        </div>
+      </section>
+      <!-- 资源列表 END -->
+
+      <!-- 更多推荐 -->
+      <section class="s-rec mt-5">
+        <h3>更多推荐</h3>
+        <div>
+          <div class="row row-cols-2 mb mt-8" id="section-jc1"></div>
+          <div class="row row-cols-2 mb mt-8" id="section-jc2"></div>
+        </div>
+      </section>
+      <!-- 更多推荐 END -->
+    </div>
+    <!-- 番剧详情 END -->
+
+    <!-- Footer -->
+    <footer>
+      <p>©2023 By baby李</p>
+      <p>苏 ICP 备 2022010832 号 - 1</p>
+    </footer>
+    <!-- Footer END -->
+
+    <!-- 隐藏域 -->
+    <div class="icon i-ant-design-play-circle-filled" style="display: none"></div>
+    <!-- 隐藏域 END -->
+    <script type="module" src="/src/entries/detail.ts"></script>
+    <script>
+      layui.use(function () {
+        var rate = layui.rate
+        // 渲染
+        rate.render({
+          elem: '#rate',
+          value: 4,
+          readonly: true
+        })
+      })
+
+      const playBtn = document.querySelector('#playBtn')
+      const shareBtn = document.querySelector('#shareBtn')
+      const likeBtn = document.querySelector('#likeBtn')
+      playBtn.addEventListener('click', () => {
+        location.href = '/pages/play.html'
+      })
+      function wipMsg() {
+        layui.layer.msg('功能开发中，敬请期待 =w=')
+      }
+      shareBtn.addEventListener('click', () => {
+        wipMsg()
+      })
+      likeBtn.addEventListener('click', () => {
+        wipMsg()
+      })
+    </script>
+  </body>
+</html>

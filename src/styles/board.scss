@@ -1,0 +1,18 @@
+.top-container {
+  margin-top: -1rem;
+  height: 250px;
+  width: 100vw;
+  background-image: url('@/assets/b_banner.jpg');
+
+  .text {
+    padding: 60px;
+  }
+}
+
+.card {
+  margin-top: 1em;
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻想乡 - 首页</title>
+    <script>
+      const jumpToDetail = (info) => {
+        localStorage.setItem('detailInfo', JSON.stringify(info))
+        location.href = '/pages/detail.html'
+      }
+    </script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg mb sticky-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand flex flex-items-center" href="javascript:;">
+          <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top b-rd" />
+          <span class="ml-5">幻想乡</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active important-flex" aria-current="page" href="javascript:;">
+                <div class="i-ant-design-home-twotone text-xl mt-0.6"></div>
+                &nbsp;首页
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-fire-twotone text-xl mt-0.6"></div>
+                &nbsp;TV动画
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-video-camera-twotone text-xl mt-0.6"></div>
+                &nbsp;剧场版
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/rank.html">
+                <div class="i-ant-design-crown-twotone text-xl mt-0.6"></div>
+                &nbsp;排行榜
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/board.html">
+                <div class="i-ant-design-message-twotone text-xl mt-0.6"></div>
+                &nbsp;留言板
+              </a>
+            </li>
+          </ul>
+
+          <!-- 右侧操作区 -->
+          <div class="input-group important-w-40 mr-10 mb mt">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="i-ant-design-search-outlined text-xl"></div>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索..." aria-label="search" aria-describedby="basic-addon1" />
+          </div>
+          <div class="nav-op mb mt">
+            <button type="button" id="loginBtn" class="btn btn-outline-primary rounded-pill">登录</button>
+            <button type="button" class="btn btn-primary swiper-btn rounded-pill">下载APP</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏 END -->
+
+    <!-- 首页主体 -->
+    <div class="container-fluid">
+      <!-- 轮播 -->
+      <div class="swiper hot-swiper rounded-4">
+        <div class="swiper-wrapper">
+          <!-- 轮播 1 -->
+          <div class="swiper-slide">
+            <div class="swiper-img swiper-img-3"></div>
+            <div class="swiper-inner">
+              <div class="swiper-cate">
+                <span class="pl-2">连载新番</span>
+              </div>
+              <h1 class="swiper-name mt-2">咒术回战 第二季</h1>
+              <div class="swiper-badge-block mt-3">
+                <span class="swiper-badge">2023</span>
+                <span class="swiper-badge ml-4">更新至 16 集</span>
+              </div>
+              <p class="swiper-intro">
+                最强2人，回不去的青春。2017年12月，乙骨忧太解除了祈本里香的诅咒。追溯到2006年（春天），高专时代的五条悟与夏油杰。作为咒术师活跃着，所向披靡的2人，接受来自咒术界拥有不死术式的要·天元的委托。委托有两个，天元的的适合者——被选中成为“星浆体”的天内理子，对那个少女的“护卫”和“抹去”两人为了维持咒术界而进行护卫任务，在那里自称伏黑的“术师杀手”以暗杀“星浆体”为目标介入。在之后被称为最强的咒术师和最恶的咒术师，五条与夏油，两人的过去被揭开…
+              </p>
+              <button type="button" class="btn btn-primary swiper-btn">立即播放</button>
+            </div>
+          </div>
+          <!-- 轮播 2 -->
+          <div class="swiper-slide">
+            <div class="swiper-img swiper-img-2"></div>
+            <div class="swiper-inner">
+              <div class="swiper-cate">
+                <span class="pl-2">连载新番</span>
+              </div>
+              <h1 class="swiper-name mt-2">超超超超超喜欢你的100个女朋友</h1>
+              <div class="swiper-badge-block mt-3">
+                <span class="swiper-badge">2023</span>
+                <span class="swiper-badge ml-4">更新至 06 集</span>
+              </div>
+              <p class="swiper-intro">
+                初中的毕业典礼上，爱城恋太郎进行了人生的第100次告白，但和先前的99次一样，都被拒绝了。恋太郎在男女间的评价一直都很好，但总是无法被女孩当作恋爱对象。这天，恋太郎来到了祈求缘分的神社，在他虔诚膜拜时，神出现了。神告诉恋太郎，在升上高中后恋太郎将会遇到命运之人，并且总共有100人……。DEAD·OR·LOVE的学园新生活开幕！！
+              </p>
+              <button type="button" class="btn btn-primary swiper-btn">立即播放</button>
+            </div>
+          </div>
+          <!-- 轮播 3 -->
+          <div class="swiper-slide">
+            <div class="swiper-img swiper-img-1"></div>
+            <div class="swiper-inner">
+              <div class="swiper-cate">
+                <span class="pl-2">连载新番</span>
+              </div>
+              <h1 class="swiper-name mt-2">葬送的芙莉莲</h1>
+              <div class="swiper-badge-block mt-3">
+                <span class="swiper-badge">2023</span>
+                <span class="swiper-badge ml-4">更新至 10 集</span>
+              </div>
+              <p class="swiper-intro">
+                改编自原作山田钟人，作画阿部司的同名漫画。在打倒了魔王的勇者一行人当中，魔法使芙莉莲是一位精灵，她和另外三人有着不一样的地方。生活在“之后”的世界里，她感受到了什么；留下来的人们所编织的葬送与祈祷又意味着什么……故事将从“冒险的结束”开始。这是讲述英雄们的活法的，日后谈奇幻作品！
+              </p>
+              <button type="button" class="btn btn-primary swiper-btn">立即播放</button>
+            </div>
+          </div>
+          <!-- 轮播 4 -->
+          <div class="swiper-slide">
+            <div class="swiper-img swiper-img-4"></div>
+            <div class="swiper-inner">
+              <div class="swiper-cate">
+                <span class="pl-2">连载新番</span>
+              </div>
+              <h1 class="swiper-name mt-2">间谍过家家 第二季</h1>
+              <div class="swiper-badge-block mt-3">
+                <span class="swiper-badge">2023</span>
+                <span class="swiper-badge ml-4">更新至 06 集</span>
+              </div>
+              <p class="swiper-intro">
+                每个人都有不可告人的一面——这是一个世界各国均暗地里进行激烈情报战的时代。东国（Ostania）与西国（Westalis）的冷战状态已经持续数十年。“黄昏”是西国情报局东国对策科“WISE”的一名优秀间谍。为调查威胁东西两国和平的人物——东国国家统一党总裁多诺万·德斯蒙，上级给予了他一个绝密任务。任务名为：“枭”（Strix）行动。内容是“一周之内组建家庭，潜入德斯蒙儿子就读的名门学校的联谊会”。于是“黄昏”扮演成精神科医生劳埃德·福杰，开始组建家庭。然而，他找来的女儿阿尼亚是个能读心的超能力者，妻子约尔是个杀手。三人利害关系一致，便互相隐瞒身份，开始了共同生活。世界的和平，就掌握在这意外不断的临时一家人手中。
+              </p>
+              <button type="button" class="btn btn-primary swiper-btn">立即播放</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 连载新番 -->
+      <section>
+        <h2 class="mt-8 mb">连载新番（周人气）</h2>
+        <div>
+          <div class="row row-cols-2 mb mt-8" id="section-lz1"></div>
+          <div class="row row-cols-2 mb mt-8" id="section-lz2"></div>
+        </div>
+      </section>
+      <!-- 连载新番 END -->
+
+      <!-- 完结番剧 -->
+      <section>
+        <h2 class="mt-8 mb">完结番剧（周人气）</h2>
+        <div>
+          <div class="row row-cols-2 mb mt-8" id="section-wj1"></div>
+          <div class="row row-cols-2 mb mt-8" id="section-wj2"></div>
+        </div>
+      </section>
+      <!-- 完结番剧 END -->
+
+      <!-- 动漫剧场 -->
+      <section>
+        <h2 class="mt-8 mb">动漫剧场（周人气）</h2>
+        <div>
+          <div class="row row-cols-2 mb mt-8" id="section-jc1"></div>
+          <div class="row row-cols-2 mb mt-8" id="section-jc2"></div>
+        </div>
+      </section>
+      <!-- 动漫剧场 END -->
+    </div>
+    <!-- 首页主体 END -->
+
+    <!-- Footer -->
+    <footer>
+      <p>©2023 By baby李</p>
+      <p>苏 ICP 备 2022010832 号 - 1</p>
+    </footer>
+    <!-- Footer END -->
+
+    <!-- 隐藏域 -->
+    <div class="icon i-ant-design-play-circle-filled" style="display: none"></div>
+    <!-- 隐藏域 END -->
+    <script type="module" src="/src/entries/main.ts"></script>
+  </body>
+</html>

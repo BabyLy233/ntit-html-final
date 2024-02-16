@@ -1,0 +1,125 @@
+body {
+  overflow-x: hidden;
+
+  .no1 {
+    color: #f5743f;
+  }
+
+  .no2 {
+    color: #39746e;
+  }
+
+  .no3 {
+    color: #e78180;
+  }
+}
+
+.cate-banner {
+  height: 17em;
+  margin-top: -1rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner-text {
+    transform: translateY(-12em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+    }
+
+    h3 {
+      color: gray;
+    }
+  }
+}
+
+.rank-card {
+  backdrop-filter: blur(20px);
+  background: rgba($color: #ffffff, $alpha: 0.3);
+  padding: 1.5em;
+  border-radius: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  .rank-card-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1em 0;
+
+    h3 {
+      font-weight: bold;
+      font-size: 2.5em;
+    }
+
+    img {
+      margin-left: 1em;
+      margin-right: 1em;
+      width: 5.5em;
+      border-radius: 1em;
+    }
+
+    .rank-item-info {
+      display: flex;
+      flex-direction: column;
+
+      .title,
+      .trans {
+        height: 3em;
+        line-height: 3em;
+        text-align: start;
+      }
+
+      .badge {
+        width: 6em;
+      }
+
+      .title {
+        color: rgba($color: #000000, $alpha: 1);
+        font-weight: bold;
+      }
+
+      .trans {
+        color: rgba($color: #000000, $alpha: 0.4);
+      }
+    }
+
+    .hot {
+      display: flex;
+      flex-direction: column;
+
+      .num {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .title {
+        text-align: end;
+        color: rgba($color: #000000, $alpha: 0.6);
+      }
+    }
+  }
+
+  .rank-card-item:hover {
+    cursor: pointer;
+    color: rgba($color: #7b68ee, $alpha: 1);
+    transition: 0.4s ease-in-out;
+  }
+}

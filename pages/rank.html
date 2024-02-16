@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幻想乡 - 排行榜</title>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg mb sticky-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand flex flex-items-center" href="/">
+          <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top b-rd" />
+          <span class="ml-5">幻想乡</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link important-flex" aria-current="page" href="/">
+                <div class="i-ant-design-home-twotone text-xl mt-0.6"></div>
+                &nbsp;首页
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-fire-twotone text-xl mt-0.6"></div>
+                &nbsp;TV动画
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="#">
+                <div class="i-ant-design-video-camera-twotone text-xl mt-0.6"></div>
+                &nbsp;剧场版
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active important-flex" href="#">
+                <div class="i-ant-design-crown-twotone text-xl mt-0.6"></div>
+                &nbsp;排行榜
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link important-flex" href="/pages/board.html">
+                <div class="i-ant-design-message-twotone text-xl mt-0.6"></div>
+                &nbsp;留言板
+              </a>
+            </li>
+          </ul>
+
+          <!-- 右侧操作区 -->
+          <div class="input-group important-w-40 mr-10 mb mt">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="i-ant-design-search-outlined text-xl"></div>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索..." aria-label="search" aria-describedby="basic-addon1" />
+          </div>
+          <div class="nav-op mb mt">
+            <button type="button" id="loginBtn" class="btn btn-outline-primary rounded-pill">登录</button>
+            <button type="button" class="btn btn-primary rounded-pill">下载APP</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏 END -->
+
+    <!-- 排行 Banner -->
+    <div class="cate-banner">
+      <img
+        src="https://images.unsplash.com/photo-1614851099511-773084f6911d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="img-fluid"
+        alt="top-banner"
+      />
+      <div class="banner-text">
+        <h2>热映排行</h2>
+        <h3>新鲜热播好剧</h3>
+      </div>
+    </div>
+    <!-- 排行 Banner END -->
+
+    <!-- 排行分类 Nav -->
+    <ul class="nav justify-content-center nav-pills mt important-mb">
+      <li class="nav-item">
+        <a class="nav-link active" href="javascript:;" style="color: white !important">热映排行</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:;">优质精选</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:;">最新更新</a>
+      </li>
+    </ul>
+    <!-- 排行分类 Nav END -->
+
+    <!-- 排行目录 -->
+    <section class="rank-list">
+      <div class="row justify-content-start px-4">
+        <div class="col-xxl-6 col-xl-6 gx-5 mb-10">
+          <div class="rank-card">
+            <h2>TV动画</h2>
+            <div class="rank-card-item">
+              <h3 class="no1">1</h3>
+              <img src="/img/排行榜/电锯人.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">电锯人</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">链锯人 Chainsaw Man</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no1"></div>
+                  3252903
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no2">2</h3>
+              <img src="/img/排行榜/影.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">想要成为影之实力者！</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">The Eminence</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no2"></div>
+                  1653618
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no3">3</h3>
+              <img src="/img/排行榜/鬼灭.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">鬼灭之刃 — 刀匠村篇</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">Kimetsu no Yaiba</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no3"></div>
+                  1560433
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no">4</h3>
+              <img src="/img/排行榜/咒术回战.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">咒术回战 第二季</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">Jujutsu Kaisen (2023)</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block"></div>
+                  1410355
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no">5</h3>
+              <img src="/img/排行榜/间谍过家家.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">间谍过家家 — 第二部分</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">スパイファミリー 第2</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block"></div>
+                  981314
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6">
+          <div class="rank-card">
+            <h2>剧场版</h2>
+            <div class="rank-card-item">
+              <h3 class="no1">1</h3>
+              <img src="/img/排行榜/铃芽户缔.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">铃芽户缔</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">铃芽的门锁 Suzume</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no1"></div>
+                  446774
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no2">2</h3>
+              <img src="/img/排行榜/巨人上.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">进击的巨人 上</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">Shingeki no Kyojin</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no2"></div>
+                  444680
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no3">3</h3>
+              <img src="/img/排行榜/巨人下.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">进击的巨人 下</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">Shingeki no Kyojin</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block no3"></div>
+                  311754
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no">4</h3>
+              <img src="/img/排行榜/胰脏.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">我想吃掉你的胰脏</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">Kimi no Suizou</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block"></div>
+                  194498
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+            <div class="rank-card-item">
+              <h3 class="no">5</h3>
+              <img src="/img/排行榜/五等分.jpg" alt="rank-img" />
+              <div class="rank-item-info">
+                <span class="title">五等分的新娘</span>
+                <span class="badge text-bg-light">已完结</span>
+                <span class="trans d-inline-block text-truncate">The Quintessential</span>
+              </div>
+              <div class="hot">
+                <span class="num">
+                  <div class="i-ant-design-fire-filled inline-block"></div>
+                  94299
+                </span>
+                <span class="title">综合热度</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 排行目录 END -->
+
+    <!-- Footer -->
+    <footer>
+      <p>©2023 By baby李</p>
+      <p>苏 ICP 备 2022010832 号 - 1</p>
+    </footer>
+    <!-- Footer END -->
+
+    <script type="module" src="/src/entries/rank.ts"></script>
+  </body>
+</html>
